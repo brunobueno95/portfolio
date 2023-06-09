@@ -1,0 +1,51 @@
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999999;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.link {
+  font-size: large;
+  font-family: Arial, sans-serif;
+}
+
+.link:hover {
+  color: #ff4f09;
+}
+
+.img {
+  max-width: 100%;
+  height: auto;
+  min-width: 60px;
+}
+
+.routes {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+@media (max-width: 500px) {
+  .routes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.icnClose {
+  color: white;
+  cursor: pointer;
+  margin: 10px auto;
+  font-size: 30px;
+}
+
+.icnClose:hover {
+  color: #ff4f09;
+}

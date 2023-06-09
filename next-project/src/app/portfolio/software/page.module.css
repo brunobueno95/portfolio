@@ -1,0 +1,30 @@
+.container {
+}
+
+.mainTitle {
+  background: linear-gradient(to right, white, #f8703a, #f17d51);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center; /* Added text-align property to center align */
+}
+
+.paragraph {
+  color: #fff5f1;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.backIcn {
+  margin-top: 40px;
+  cursor: pointer;
+  font-size: 25px;
+  color: #f17d51;
+}
+
+.backIcn:hover {
+  color: #ff4800;
+}
