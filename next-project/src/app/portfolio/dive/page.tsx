@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Shark from "public/images/shark.png";
@@ -9,6 +10,7 @@ import Roatan from "public/images/reef-shark.jpg";
 import styles from "./page.module.css";
 import Link from "next/link";
 import { FaArrowLeft } from "react-icons/fa";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const Dive = () => {
   return (

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Me from "public/images/me.jpg";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
 const Contact = () => {
   return (

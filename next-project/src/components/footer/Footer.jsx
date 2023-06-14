@@ -3,9 +3,8 @@ import styles from "./page.module.css";
 
 const Footer = () => {
   return (
-    <div style={{ margin: "0 auto" }}>
+    <div className={styles.container}>
       <div>@2023 Bruno Bueno. All rights reserved</div>
-      <div></div>
     </div>
   );
 };

@@ -12,7 +12,7 @@ body {
     to right,
     #000000,
     rgb(22, 22, 22),
-    rgb(65, 65, 65)
+    rgb(43, 43, 43)
   );
 
   color: #eff2f3;
@@ -30,5 +30,4 @@ a {
   padding: 0 60px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }

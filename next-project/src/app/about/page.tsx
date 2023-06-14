@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Bruno from "public/images/me.jpg";
 import Caribbean from "public/images/caribbean.webp";
 import Luca from "public/images/luca.jpg";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 const About = () => {
   return (
@@ -16,8 +18,7 @@ const About = () => {
         getting in touch with me, there's a contact page where you can reach
         out. This entire website was created by me using Next.js, React,
         Typescript, Node.js and MongoDB.
-      </p>
-
+      </p>{" "}
       <h3 className={styles.subTitle}>A Bit About Me</h3>
       <div className={styles.containerTextogImg}>
         <Image src={Bruno} alt="me-bruno" className={styles.img} />
@@ -42,9 +43,13 @@ const About = () => {
           </p>
         </div>
       </div>
-
       <h3 className={styles.subTitle}>The Diving Adventure</h3>
-
+      <Player
+        autoplay
+        loop
+        src="https://assets2.lottiefiles.com/temp/lf20_rTWCRt.json"
+        style={{ height: "50px", width: "300px" }}
+      ></Player>
       <div className={styles.containerTextogImg}>
         <div style={{ margin: "auto 0" }}>
           <p className={styles.paragraph}>
@@ -70,7 +75,6 @@ const About = () => {
         </div>
         <Image src={Caribbean} alt="island" className={styles.imgHori} />
       </div>
-
       <h3 className={styles.subTitle}>The Path of Growth</h3>
       <div className={styles.containerTextogImg}>
         <Image src={Luca} alt="me-bruno" className={styles.imgLuca} />
