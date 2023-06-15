@@ -33,7 +33,7 @@
   background: linear-gradient(to right, white, #f8703a, #f17d51);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 55px;
+  font-size: 45px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -56,12 +56,14 @@
 .containerTextogImg {
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 
 @media (min-width: 768px) {
   .containerTextogImg {
     flex-direction: row;
     align-items: center;
+    gap: 5px;
   }
 
   .imgHori {

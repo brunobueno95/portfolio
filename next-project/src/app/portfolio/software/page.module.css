@@ -5,7 +5,7 @@
   background: linear-gradient(to right, white, #f8703a, #f17d51);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 35px;
+  font-size: 45px;
   margin-top: 30px;
   margin-bottom: 60px;
   text-align: center; /* Added text-align property to center align */
@@ -27,4 +27,68 @@
 
 .backIcn:hover {
   color: #ff4800;
+}
+
+.projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 100px auto;
+}
+
+.projectCard {
+  position: relative;
+  width: 550px;
+  height: 310px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgb(38, 38, 38) 0px 0px 20px;
+}
+
+.projectCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projectCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover::before {
+  opacity: 1;
+}
+
+.projectName {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projectCard:hover .projectName {
+  opacity: 1;
+}
+.link {
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }

@@ -2,13 +2,13 @@
   background: linear-gradient(to right, white, #f8703a, #f17d51);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 55px;
+  font-size: 45px;
   margin-top: 30px;
   margin-bottom: 50px;
   text-align: center;
 }
 .imgContainer {
-  width: 900px;
+  width: 100%;
   height: 500px;
   position: relative;
   border-radius: 10px;
@@ -57,4 +57,39 @@
 
 .backIcn:hover {
   color: #ff4800;
+}
+
+@media (max-width: 900px) {
+  .imgContainer {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: rgb(38, 38, 38) 0px 0px 10px;
+  }
+}
+@media (max-width: 800px) {
+  .imgContainer {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: rgb(38, 38, 38) 0px 0px 10px;
+  }
+}
+
+@media (max-width: 750px) {
+  .imgContainer {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: rgb(38, 38, 38) 0px 0px 10px;
+  }
 }

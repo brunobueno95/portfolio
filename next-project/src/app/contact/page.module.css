@@ -27,7 +27,7 @@
   background: linear-gradient(to right, #fab194, #f8703a, #f17d51);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 35px;
+  font-size: 45px;
   margin-top: 30px;
   text-align: center; /* Added text-align property to center align */
 }

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./page.module.css";
 import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
+import Image from "next/image";
 
 const Software = () => {
   return (
@@ -50,9 +51,26 @@ const Software = () => {
       </p>
       <p className={styles.paragraph}>
         On this page, you will find a showcase of my projects (those that I am
-        permitted to share). Each project will be accompanied by a description
-        and a link where you can explore them firsthand.
+        permitted to share). Each project will be accompanied by a description,
+        the features, what I learned and a gitHub link where you can explore the
+        code firsthand.
       </p>
+
+      <div className={styles.projectsContainer}>
+        <Link href="/portfolio/software/dragon">
+          <div className={styles.projectCard}>
+            <Image
+              className={styles.img}
+              src="/images/dragon-imgs/mainPage.jpg"
+              alt="dragon-project"
+              layout="responsive"
+              width={100}
+              height={106}
+            />
+            <div className={styles.projectName}>Dragon Project</div>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };

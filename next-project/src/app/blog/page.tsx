@@ -64,11 +64,13 @@ const Blog = () => {
           </label>
           {/* Add more category checkboxes here */}
         </div>
-        <input
-          className={styles.searchInput}
-          onChange={(e) => setSearch(e.target.value.toLowerCase())}
-        />
-        <AiOutlineSearch className={styles.searchIcn} />
+        <div className={styles.textInputdiv}>
+          <input
+            className={styles.searchInput}
+            onChange={(e) => setSearch(e.target.value.toLowerCase())}
+          />
+          <AiOutlineSearch className={styles.searchIcn} />
+        </div>
       </div>
 
       <div className={styles.containerCards}>
