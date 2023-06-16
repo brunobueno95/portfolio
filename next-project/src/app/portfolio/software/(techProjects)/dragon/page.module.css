@@ -52,14 +52,91 @@
 }
 
 .paragraph {
-  flex-grow: 1;
   margin-left: 20px;
 }
 
 .imgMainPage {
   margin: auto;
-  width: 90%;
+  width: 100%;
   height: auto;
   border-radius: 30px;
   box-shadow: rgb(38, 38, 38) 0px 0px 20px;
+}
+
+.imgRow {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: rgb(38, 38, 38) 0px 0px 20px;
+}
+.img33 {
+  width: 37%;
+  height: 320px;
+  border-radius: 5px;
+  box-shadow: rgb(38, 38, 38) 0px 0px 20px;
+}
+
+.imgTM {
+  width: 400px;
+  height: 280px;
+  border-radius: 5px;
+  box-shadow: rgb(38, 38, 38) 0px 0px 20px;
+}
+.gitLink {
+  color: #f17d51;
+}
+
+.gitLink:hover {
+  color: #ff4800;
+}
+
+.containerColumn {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.containerRow {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .containerTextandImg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .containerRow {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .imgTM {
+    width: 80%;
+  }
+}
+
+@media (max-width: 800px) {
+  .imgCircle {
+    width: 90%;
+    height: auto;
+  }
+
+  .imgRow {
+    width: 100%;
+    height: auto;
+  }
+  .imgTM {
+    width: 100%;
+    height: auto;
+  }
+  .img33 {
+    width: 100%;
+  }
 }

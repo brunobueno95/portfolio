@@ -1,8 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
 .img {
-  max-width: 100%;
   height: auto;
-  display: block; /* Added display property to center align */
+  display: block;
   margin: auto;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@media (max-width: 900px) {
+  .img {
+    width: 100%;
+  }
 }
 
 .mainTitle {
@@ -11,14 +26,17 @@
   -webkit-text-fill-color: transparent;
   font-size: 45px;
   margin-bottom: 30px;
-  text-align: center; /* Added text-align property to center align */
+  text-align: center;
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .subTitle {
   color: #f17d51;
   margin: 20px 0;
   font-size: 26px;
-  text-align: center; /* Added text-align property to center align */
+  text-align: center;
 }
 
 .buttons {
@@ -27,7 +45,7 @@
   align-items: center;
   flex-wrap: wrap;
   height: 100%;
-  margin-top: 12px; /* Add this line to ensure the parent container has a height */
+  margin-top: 12px;
 }
 
 .btnContainer {
@@ -51,6 +69,9 @@
   text-align: center;
   cursor: pointer;
   font-family: Arial, sans-serif;
+  -webkit-animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .btnSwd {
@@ -62,8 +83,12 @@
 .paragraph {
   color: #fff5f1;
   font-size: 18px;
+
   line-height: 1.5;
   margin-bottom: 20px;
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .btnDive:hover {
@@ -72,4 +97,79 @@
 
 .btnSwd:hover {
   box-shadow: #ff4800 1px 1px 15px;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
 }

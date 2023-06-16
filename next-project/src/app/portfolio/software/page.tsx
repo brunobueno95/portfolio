@@ -3,8 +3,18 @@ import styles from "./page.module.css";
 import { FaArrowLeft } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
+import DragonGame from "/public/images/dragon-imgs/mainPage.jpg";
 
 const Software = () => {
+  const projectsList = [
+    {
+      projectName: "Dragon Game",
+      page: "dragon",
+      image: DragonGame,
+      altImg: "dragon project",
+    },
+  ];
+
   return (
     <div style={{ marginBottom: "100px" }}>
       <Link href="/portfolio">
@@ -57,19 +67,21 @@ const Software = () => {
       </p>
 
       <div className={styles.projectsContainer}>
-        <Link href="/portfolio/software/dragon">
-          <div className={styles.projectCard}>
-            <Image
-              className={styles.img}
-              src="/images/dragon-imgs/mainPage.jpg"
-              alt="dragon-project"
-              layout="responsive"
-              width={100}
-              height={106}
-            />
-            <div className={styles.projectName}>Dragon Project</div>
-          </div>
-        </Link>
+        {projectsList.map((p) => (
+          <Link href={`/portfolio/software/${p.page}`} key={p.projectName}>
+            <div className={styles.projectCard}>
+              <Image
+                className={styles.img}
+                src={p.image}
+                alt={p.altImg}
+                layout="responsive"
+                width={100}
+                height={106}
+              />
+              <div className={styles.projectName}>{p.projectName}</div>
+            </div>
+          </Link>
+        ))}
       </div>
     </div>
   );
