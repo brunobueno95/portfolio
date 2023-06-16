@@ -19,7 +19,7 @@ const Philippines = () => {
       </h1>
       <div className={styles.containerTextogImgRevert}>
         <Image src={Shark} alt="padiInstructor" className={styles.img} />
-        <div style={{ alignSelf: "center" }}>
+        <div className={styles.animSlideRight} style={{ alignSelf: "center" }}>
           <p className={styles.paragraph}>
             My journey to the Philippines was driven by a sense of adventure and
             a burning desire to pursue my dreams. With no job lined up, I set
@@ -43,7 +43,10 @@ const Philippines = () => {
         </div>
       </div>
       <div className={styles.containerTextogImg}>
-        <div style={{ alignSelf: "center", marginRight: "20px" }}>
+        <div
+          className={styles.animSlideLeft}
+          style={{ alignSelf: "center", marginRight: "20px" }}
+        >
           <p className={styles.paragraph}>
             The diving experience in Malapascua was beyond extraordinary. Each
             dive unveiled a world of wonders I had never witnessed before. As
@@ -79,18 +82,21 @@ const Philippines = () => {
 
       <div className={styles.containerTextogImgRevert}>
         <Image src={Nudi} alt="padiInstructor" className={styles.img} />
-        <p
-          style={{ alignSelf: "center", marginLeft: "20px" }}
-          className={styles.paragraph}
-        >
-          Working alongside esteemed individuals in the technical dive industry
-          was an absolute honor. Their expertise and the wealth of knowledge I
-          absorbed have shaped me both personally and professionally. Though
-          circumstances changed, the immeasurable value of the memories and
-          experiences I gained in the Philippines will forever be a part of my
-          journey. They serve as a testament to the power of following one's
-          dreams, embracing new adventures, and cherishing the underwater world.
-        </p>
+        <div className={styles.animSlideRight}>
+          <p
+            style={{ alignSelf: "center", marginLeft: "20px" }}
+            className={styles.paragraph}
+          >
+            Working alongside esteemed individuals in the technical dive
+            industry was an absolute honor. Their expertise and the wealth of
+            knowledge I absorbed have shaped me both personally and
+            professionally. Though circumstances changed, the immeasurable value
+            of the memories and experiences I gained in the Philippines will
+            forever be a part of my journey. They serve as a testament to the
+            power of following one's dreams, embracing new adventures, and
+            cherishing the underwater world.
+          </p>
+        </div>
       </div>
     </div>
   );

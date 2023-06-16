@@ -24,21 +24,24 @@ const DragonProject = () => {
         <FaArrowLeft className={styles.backIcn} />
       </Link>
       <h1 className={styles.mainTitle}>The Dragon Game</h1>
-      <p className={styles.paragraph}>
-        {" "}
-        In this game, you embark on a captivating journey with your avatar
-        dragon. Your dragon evolves through different life stages, starting from
-        an egg and progressing to a baby, juvenile, and eventually an adult.
-        Advancing to the next life stage requires accumulating experience points
-        (XP), with each level attained when your XP reaches 500. You have
-        various ways to gain XP, including consuming potions, engaging in
-        battles with monsters, or successfully escaping from encounters. Potions
-        can be acquired through purchase or by crafting them using materials you
-        discover throughout your explorations. Exploration is a key aspect of
-        the game, and you have three distinct locations to explore: the forest,
-        ocean, and desert. Each location offers unique materials and presents
-        different challenges in the form of diverse monsters.
-      </p>
+      <div className={styles.animExpand}>
+        <p className={styles.paragraph}>
+          {" "}
+          In this game, you embark on a captivating journey with your avatar
+          dragon. Your dragon evolves through different life stages, starting
+          from an egg and progressing to a baby, juvenile, and eventually an
+          adult. Advancing to the next life stage requires accumulating
+          experience points (XP), with each level attained when your XP reaches
+          500. You have various ways to gain XP, including consuming potions,
+          engaging in battles with monsters, or successfully escaping from
+          encounters. Potions can be acquired through purchase or by crafting
+          them using materials you discover throughout your explorations.
+          Exploration is a key aspect of the game, and you have three distinct
+          locations to explore: the forest, ocean, and desert. Each location
+          offers unique materials and presents different challenges in the form
+          of diverse monsters.
+        </p>
+      </div>
       <h2 className={styles.subTitle}>Insightful Lessons</h2>
       <p className={styles.paragraph}>
         This project is special to me because it was my first significant

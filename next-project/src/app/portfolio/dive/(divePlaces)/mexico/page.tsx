@@ -19,7 +19,7 @@ const Mexico = () => {
       </h1>
 
       <div className={styles.containerTextogImg}>
-        <div style={{ alignSelf: "center" }}>
+        <div className={styles.animSlideLeft} style={{ alignSelf: "center" }}>
           <p className={styles.paragraph}>
             I had the incredible opportunity to live in Mexico for an entire
             season, driven by my lifelong dream to explore Puerto Escondido.
@@ -44,7 +44,10 @@ const Mexico = () => {
 
       <div className={styles.containerTextogImgRevert}>
         <Image src={Course} alt="padiInstructor" className={styles.img} />
-        <div style={{ alignSelf: "center", marginLeft: "20px" }}>
+        <div
+          className={styles.animSlideLeft}
+          style={{ alignSelf: "center", marginLeft: "20px" }}
+        >
           {" "}
           <p className={styles.paragraph}>
             The city had only two dive shops, so I wasted no time in introducing
@@ -68,7 +71,10 @@ const Mexico = () => {
       </div>
 
       <div className={styles.containerTextogImg}>
-        <div style={{ alignSelf: "center", marginRight: "20px" }}>
+        <div
+          className={styles.animSlideRight}
+          style={{ alignSelf: "center", marginRight: "20px" }}
+        >
           <p className={styles.paragraph}>
             My time in Mexico was a perfect balance of surfing the biggest waves
             of my life and navigating strong currents during diving excursions.

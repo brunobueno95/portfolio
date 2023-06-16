@@ -9,20 +9,22 @@ const About = () => {
   return (
     <div style={{ marginBottom: "100px" }} className={styles.container}>
       <h2 className={styles.mainTitle}>Welcome to my webpage!</h2>
-      <p className={styles.paragraph}>
-        On this website you will find blog where I'll share posts about my
-        personal journey. In the portfolio section, I'll present my projects
-        related to diving and software development. If you're interested in
-        getting in touch with me, there's a contact page where you can reach
-        out. This entire website was created by me using Next.js, React,
-        Typescript, Node.js and MongoDB.
-      </p>
+      <div className={styles.animExpand}>
+        <p className={styles.paragraph}>
+          On this website you will find blog where I'll share posts about my
+          personal journey. In the portfolio section, I'll present my projects
+          related to diving and software development. If you're interested in
+          getting in touch with me, there's a contact page where you can reach
+          out. This entire website was created by me using Next.js, React,
+          Typescript, Node.js and MongoDB.
+        </p>
+      </div>
 
       <h3 className={styles.subTitle}>A Bit About Me</h3>
       <div className={styles.containerTextogImg}>
         <Image src={Bruno} alt="me-bruno" className={styles.img} />
 
-        <div style={{ margin: "auto 0" }}>
+        <div className={styles.animSlideRight} style={{ margin: "auto 0" }}>
           {" "}
           <p className={styles.paragraph}>
             My name is Bruno Bueno, a 28-year-old Brazilian currently living in
@@ -46,7 +48,7 @@ const About = () => {
       <h3 className={styles.subTitle}>The Diving Adventure</h3>
 
       <div className={styles.containerTextogImg}>
-        <div style={{ margin: "auto 0" }}>
+        <div className={styles.animSlideLeft} style={{ margin: "auto 0" }}>
           <p className={styles.paragraph}>
             With some savings, I traveled to Roatan, a small island in the
             Caribbean, to pursue my dream of becoming a dive instructor. After
@@ -74,7 +76,7 @@ const About = () => {
       <h3 className={styles.subTitle}>The Path of Growth</h3>
       <div className={styles.containerTextogImg}>
         <Image src={Luca} alt="me-bruno" className={styles.imgLuca} />
-        <div style={{ margin: "auto 0" }}>
+        <div className={styles.animSlideRight} style={{ margin: "auto 0" }}>
           {" "}
           <p className={styles.paragraph}>
             Alongside my studies, I continued to work as a dive instructor on

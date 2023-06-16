@@ -22,15 +22,19 @@ const BackgroundAnimation = () => {
 const Portfolio = () => {
   return (
     <>
-      {/* <BackgroundAnimation /> */}
       <div className={styles.container}>
-        <Link href="/portfolio/dive">
-          <h1 className={styles.titlePage}>SCUBADIVE</h1>
-        </Link>
+        <div className={styles.animSlideLeft}>
+          <Link href="/portfolio/dive">
+            <h1 className={styles.titlePage}>SCUBADIVE</h1>
+          </Link>
+        </div>
+
         <div className={styles.line}></div>
-        <Link href="/portfolio/software">
-          <h1 className={styles.titlePage}>SOFTWARE</h1>
-        </Link>
+        <div className={styles.animSlideRight}>
+          <Link href="/portfolio/software">
+            <h1 className={styles.titlePage}>SOFTWARE</h1>
+          </Link>
+        </div>
       </div>
     </>
   );

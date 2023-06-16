@@ -19,7 +19,7 @@ const Honduras = () => {
       </h1>
       <div className={styles.containerTextogImg}>
         <Image src={Padi} alt="padiInstructor" className={styles.img} />
-        <div style={{ alignSelf: "center" }}>
+        <div className={styles.animSlideRight} style={{ alignSelf: "center" }}>
           <p className={styles.paragraph}>
             Honduras, specifically the small island of Roatan, holds a special
             place in my heart as it is where I embarked on my journey as a dive
@@ -42,22 +42,24 @@ const Honduras = () => {
 
       <div className={styles.containerTextogImg}>
         {" "}
-        <p className={styles.paragraph} style={{ alignSelf: "center" }}>
-          The island of Roatan itself is a true gem, attracting young travelers
-          from around the world with its natural wonders and vibrant atmosphere.
-          The diving conditions there are unparalleled. With excellent
-          visibility, vibrant coral reefs, and abundant marine life, every dive
-          was a feast for the senses. The presence of deep walls and intriguing
-          "swiss cheese" rock formations allowed for exhilarating dives that
-          increased my technical abilities.
-        </p>
+        <div className={styles.animSlideLeft}>
+          <p className={styles.paragraph} style={{ alignSelf: "center" }}>
+            The island of Roatan itself is a true gem, attracting young
+            travelers from around the world with its natural wonders and vibrant
+            atmosphere. The diving conditions there are unparalleled. With
+            excellent visibility, vibrant coral reefs, and abundant marine life,
+            every dive was a feast for the senses. The presence of deep walls
+            and intriguing "swiss cheese" rock formations allowed for
+            exhilarating dives that increased my technical abilities.
+          </p>
+        </div>
         <Image src={Shark} alt="shark" className={styles.imgShark} />
       </div>
 
       <div className={styles.containerTextogImgRevert}>
         {" "}
         <Image src={Me} alt="padiInstructor" className={styles.imgRoa} />
-        <div style={{ alignSelf: "center" }}>
+        <div className={styles.animSlideRight} style={{ alignSelf: "center" }}>
           {" "}
           <p className={styles.paragraph}>
             My time in Honduras as a dive instructor not only enhanced my
