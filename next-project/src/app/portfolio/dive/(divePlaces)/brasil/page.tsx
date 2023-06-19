@@ -21,10 +21,7 @@ const Brasil = () => {
       <div className={styles.containerTextogImg}>
         {" "}
         <div className={styles.animSlideLeft}>
-          <p
-            style={{ alignSelf: "center", marginRight: "20px" }}
-            className={styles.paragraph}
-          >
+          <p style={{ margin: "auto" }} className={styles.paragraph}>
             Brazil, my homeland, holds a special place in my heart. It is not
             only where I was born but also where my profound connection with the
             ocean began. From a young age, I immersed myself in the world of

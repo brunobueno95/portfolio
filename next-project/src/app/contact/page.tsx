@@ -2,13 +2,12 @@ import React from "react";
 import styles from "./page.module.css";
 import Image from "next/image";
 import Me from "public/images/me.jpg";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
 
 const Contact = () => {
   return (
     <div style={{ marginBottom: "100px" }} className={styles.container}>
       <div className={styles.content}>
-        <div className={styles.box}>
+        <div className={`${styles.box} ${styles.animExpand}`}>
           <div className={styles.imageWrapper}>
             <Image src={Me} alt="Contact" className={styles.imgProfile} />
           </div>
