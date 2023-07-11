@@ -266,8 +266,8 @@ const DragonProject = () => {
       </div>
       <div className={styles.animSlideLeft}>
         <p className={styles.paragraph}>
-          {" "}
-          For a more immersive experience, you can try out the live application:{" "}
+          For a more immersive experience, you can try out the live
+          application):
         </p>
         <p className={styles.paragraph}>
           {" "}
@@ -277,7 +277,8 @@ const DragonProject = () => {
             rel="noopener noreferrer"
             className={styles.gitLink}
           >
-            https://brunobueno95.github.io/TheDragon-Game/
+            https://brunobueno95.github.io/TheDragon-Game/{" "}
+            <span className={styles.paragraph}> (not phone responsive)</span>
           </a>
         </p>
 
